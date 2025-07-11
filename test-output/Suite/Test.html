@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 11 02:18:56 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45584 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>PL1 </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetLeaveEligibility()'><b>GetLeaveEligibility</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Fetch user list using GET request to '/web/index.php/api/v2/leave/leave-types/eligible?includeAllocated=true' endpoint
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetReportASC()'><b>GetReportASC</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/pim/reports/defined?limit=50&offset=0&sortField=report.name&sortOrder=ASC' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PutCustomField()'><b>PutCustomField</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Generate a PUT Request to the '/web/index.php/api/v2/pim/custom-fields/3' endpoint iwth valid Cookies2. Print and verify the request body, status code, and response body
+3. Assert that the status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetJobTitle()'><b>GetJobTitle</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/job-titles?limit=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PutOptionalField()'><b>PutOptionalField</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a PUT request to the '/web/index.php/api/v2/pim/optional-field' endpoint with a valid cookie
+2. Print and verify the response status code and response body
+3. Assert that the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetPimEmp()'><b>GetPimEmp</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/pim/employees' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PostCustomField()'><b>PostCustomField</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a POST request to the '/web/index.php/api/v2/pim/custom-fields' endpoint with a valid cookie
+2. Extract the Details of the newly created Custom Field from the response
+3. Print and verify the request body, status code, and response body
+4. Assert that the status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetEmpStatus()'><b>GetEmpStatus</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/employment-statuses?limit=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>6</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie()'><b>loginWithSeleniumAndGetCookie</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: Login to the application using Selenium and retrieve session cookie</td>
+<td></td>
+<td>21</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetAdminSubunit()'><b>GetAdminSubunit</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/subunits' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PutAdminConfig()'><b>PutAdminConfig</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a PUT request to the '/web/index.php/api/v2/admin/ldap-config' endpoint with a valid cookie
+2. Print and verify the response status code and response body
+3. Assert that the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@10f7f7de</td></tr>
+</table><p>
+</body>
+</html>

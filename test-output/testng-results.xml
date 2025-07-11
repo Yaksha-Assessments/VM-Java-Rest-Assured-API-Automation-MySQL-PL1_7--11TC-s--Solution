@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-11T02:18:56 IST" name="Suite" finished-at="2025-07-11T02:19:42 IST" duration-ms="45584">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases.loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@10f7f7de]" name="loginWithSeleniumAndGetCookie" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpStatus()[pri:1, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetEmpStatus" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetJobTitle()[pri:2, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetJobTitle" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetAdminSubunit()[pri:3, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetAdminSubunit" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetPimEmp()[pri:4, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetPimEmp" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetReportASC()[pri:5, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetReportASC" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetLeaveEligibility()[pri:6, instance:testcases.RestAssured_TestCases@10f7f7de]" name="GetLeaveEligibility" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PutAdminConfig()[pri:7, instance:testcases.RestAssured_TestCases@10f7f7de]" name="PutAdminConfig" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PutOptionalField()[pri:8, instance:testcases.RestAssured_TestCases@10f7f7de]" name="PutOptionalField" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostCustomField()[pri:9, instance:testcases.RestAssured_TestCases@10f7f7de]" name="PostCustomField" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PutCustomField()[pri:10, instance:testcases.RestAssured_TestCases@10f7f7de]" name="PutCustomField" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2025-07-11T02:18:56 IST" name="Test" finished-at="2025-07-11T02:19:42 IST" duration-ms="45584">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:18:57 IST" name="loginWithSeleniumAndGetCookie" description="Login to the application using Selenium and retrieve session cookie" finished-at="2025-07-11T02:19:18 IST" duration-ms="21658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSeleniumAndGetCookie -->
+        <test-method signature="GetEmpStatus()[pri:1, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:20 IST" name="GetEmpStatus" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/employment-statuses?limit=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:26 IST" duration-ms="6220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpStatus -->
+        <test-method signature="GetJobTitle()[pri:2, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:27 IST" name="GetJobTitle" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/job-titles?limit=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:28 IST" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetJobTitle -->
+        <test-method signature="GetAdminSubunit()[pri:3, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:28 IST" name="GetAdminSubunit" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/subunits&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:30 IST" duration-ms="1172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAdminSubunit -->
+        <test-method signature="GetPimEmp()[pri:4, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:30 IST" name="GetPimEmp" description="1. Send a GET request to the &#039;/web/index.php/api/v2/pim/employees&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:31 IST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPimEmp -->
+        <test-method signature="GetReportASC()[pri:5, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:32 IST" name="GetReportASC" description="1. Send a GET request to the &#039;/web/index.php/api/v2/pim/reports/defined?limit=50&amp;offset=0&amp;sortField=report.name&amp;sortOrder=ASC&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:33 IST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetReportASC -->
+        <test-method signature="GetLeaveEligibility()[pri:6, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:33 IST" name="GetLeaveEligibility" description="1. Fetch user list using GET request to &#039;/web/index.php/api/v2/leave/leave-types/eligible?includeAllocated=true&#039; endpoint
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T02:19:34 IST" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLeaveEligibility -->
+        <test-method signature="PutAdminConfig()[pri:7, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:34 IST" name="PutAdminConfig" description="1. Send a PUT request to the &#039;/web/index.php/api/v2/admin/ldap-config&#039; endpoint with a valid cookie
+2. Print and verify the response status code and response body
+3. Assert that the response status code is 200 and validate implementation correctness" finished-at="2025-07-11T02:19:37 IST" duration-ms="2627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutAdminConfig -->
+        <test-method signature="PutOptionalField()[pri:8, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:37 IST" name="PutOptionalField" description="1. Send a PUT request to the &#039;/web/index.php/api/v2/pim/optional-field&#039; endpoint with a valid cookie
+2. Print and verify the response status code and response body
+3. Assert that the response status code is 200 and validate implementation correctness" finished-at="2025-07-11T02:19:38 IST" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutOptionalField -->
+        <test-method signature="PostCustomField()[pri:9, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:39 IST" name="PostCustomField" description="1. Send a POST request to the &#039;/web/index.php/api/v2/pim/custom-fields&#039; endpoint with a valid cookie
+2. Extract the Details of the newly created Custom Field from the response
+3. Print and verify the request body, status code, and response body
+4. Assert that the status code is 200 and validate implementation correctness" finished-at="2025-07-11T02:19:40 IST" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostCustomField -->
+        <test-method signature="PutCustomField()[pri:10, instance:testcases.RestAssured_TestCases@10f7f7de]" started-at="2025-07-11T02:19:40 IST" name="PutCustomField" description="1. Generate a PUT Request to the &#039;/web/index.php/api/v2/pim/custom-fields/3&#039; endpoint iwth valid Cookies2. Print and verify the request body, status code, and response body
+3. Assert that the status code is 200 and validate implementation correctness" finished-at="2025-07-11T02:19:42 IST" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutCustomField -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
